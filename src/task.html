@@ -13,7 +13,8 @@
 
     <main class="w-auto ml-auto">
         <!-- Navbar  -->
-        <nav class="fixed top-0 z-50 w-full bg-white border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+        <nav
+            class="fixed top-0 z-50 w-full px-2 pr-5 bg-white border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700">
             <div class="px-3 py-3 lg:px-5 lg:pl-3">
                 <div class="flex items-center justify-between">
                     <div class="flex items-center justify-start rtl:justify-end">
@@ -282,113 +283,121 @@
                 </div>
             </div>
         </div>
-
         <!-- Content  -->
         <div class="p-4 sm:ml-64">
             <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-14">
+                <div class="flex justify-between">
+                    <p class="text-gray-900 text-2xl dark:text-white">A + B</p>
+                </div>
+                <div class="w-4/5 py-3">
+                    <p class="mb-3 text-gray-500 dark:text-gray-400">Track work across the enterprise through an
+                        open, collaborative platform. <strong class="font-semibold text-gray-900 dark:text-white">Link
+                            issues across Jira</strong> and
+                        ingest data from other software development tools, so your IT support and operations teams
+                        have richer contextual information to rapidly respond to requests, incidents, and changes.
+                    </p>
+                </div>
+                <div class="flex flex-wrap">
+                    <div class="mr-2">
+                        <p class="text-base text-gray-900 dark:text-white">Input</p>
 
-                <div class="relative overflow-x-auto sm:rounded-lg">
-                    <div
-                        class="px-3 flex items-center justify-between flex-column md:flex-row flex-wrap space-y-4 md:space-y-0 py-4 bg-white dark:bg-gray-900">
-                        <div>
-                            <button id="dropdownActionButton" data-dropdown-toggle="dropdownAction"
-                                class="inline-flex items-center text-gray-500 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-1.5 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
-                                type="button">
-                                <span class="sr-only">Action button</span>
-                                Action
-                                <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                    fill="none" viewBox="0 0 10 6">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" d="m1 1 4 4 4-4" />
-                                </svg>
-                            </button>
-                            <!-- Dropdown menu -->
-                            <div id="dropdownAction"
-                                class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                                <ul class="py-1 text-sm text-gray-700 dark:text-gray-200"
-                                    aria-labelledby="dropdownActionButton">
-                                    <li>
-                                        <a href="#"
-                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Reward</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Promote</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Activate
-                                            account</a>
-                                    </li>
-                                </ul>
-                                <div class="py-1">
-                                    <a href="#"
-                                        class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Delete
-                                        User</a>
+                        <div class="flex my-2">
+                            <div class="w-full max-w-[16rem]">
+                                <div class="relative">
+                                    <label for="npm-install-copy-button" class="sr-only">Label</label>
+                                    <input id="npm-install-copy-button" type="text"
+                                        class="col-span-6 bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                        value="10 15" disabled readonly>
+                                    <button data-copy-to-clipboard-target="npm-install-copy-button"
+                                        data-tooltip-target="tooltip-copy-npm-install-copy-button"
+                                        class="absolute end-2 top-1/2 -translate-y-1/2 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg p-2 inline-flex items-center justify-center">
+                                        <span id="default-icon">
+                                            <svg class="w-3.5 h-3.5" aria-hidden="true"
+                                                xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                viewBox="0 0 18 20">
+                                                <path
+                                                    d="M16 1h-3.278A1.992 1.992 0 0 0 11 0H7a1.993 1.993 0 0 0-1.722 1H2a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2Zm-3 14H5a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2Zm0-4H5a1 1 0 0 1 0-2h8a1 1 0 1 1 0 2Zm0-5H5a1 1 0 0 1 0-2h2V2h4v2h2a1 1 0 1 1 0 2Z" />
+                                            </svg>
+                                        </span>
+                                        <span id="success-icon" class="hidden inline-flex items-center">
+                                            <svg class="w-3.5 h-3.5 text-blue-700 dark:text-blue-500" aria-hidden="true"
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                                                <path stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2"
+                                                    d="M1 5.917 5.724 10.5 15 1.5" />
+                                            </svg>
+                                        </span>
+                                    </button>
+                                    <div id="tooltip-copy-npm-install-copy-button" role="tooltip"
+                                        class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                                        <span id="default-tooltip-message">Copy to clipboard</span>
+                                        <span id="success-tooltip-message" class="hidden">Copied!</span>
+                                        <div class="tooltip-arrow" data-popper-arrow></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <label for="table-search" class="sr-only">Search</label>
-                        <div class="relative">
-                            <div
-                                class="absolute inset-y-0 rtl:inset-r-0 start-0 flex items-center ps-3 pointer-events-none">
-                                <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
-                                </svg>
+                    </div>
+                    <div>
+                        <p class="text-base text-gray-900 dark:text-white">Output</p>
+
+                        <div class="flex my-2">
+                            <div class="w-full max-w-[16rem]">
+                                <div class="relative">
+                                    <label for="npm-install-copy-button" class="sr-only">Label</label>
+                                    <input id="npm-install-copy-button" type="text"
+                                        class="col-span-6 bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                        value="10 15" disabled readonly>
+                                    <button data-copy-to-clipboard-target="npm-install-copy-button"
+                                        data-tooltip-target="tooltip-copy-npm-install-copy-button"
+                                        class="absolute end-2 top-1/2 -translate-y-1/2 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg p-2 inline-flex items-center justify-center">
+                                        <span id="default-icon">
+                                            <svg class="w-3.5 h-3.5" aria-hidden="true"
+                                                xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                viewBox="0 0 18 20">
+                                                <path
+                                                    d="M16 1h-3.278A1.992 1.992 0 0 0 11 0H7a1.993 1.993 0 0 0-1.722 1H2a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2Zm-3 14H5a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2Zm0-4H5a1 1 0 0 1 0-2h8a1 1 0 1 1 0 2Zm0-5H5a1 1 0 0 1 0-2h2V2h4v2h2a1 1 0 1 1 0 2Z" />
+                                            </svg>
+                                        </span>
+                                        <span id="success-icon" class="hidden inline-flex items-center">
+                                            <svg class="w-3.5 h-3.5 text-blue-700 dark:text-blue-500" aria-hidden="true"
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                                                <path stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2"
+                                                    d="M1 5.917 5.724 10.5 15 1.5" />
+                                            </svg>
+                                        </span>
+                                    </button>
+                                    <div id="tooltip-copy-npm-install-copy-button" role="tooltip"
+                                        class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                                        <span id="default-tooltip-message">Copy to clipboard</span>
+                                        <span id="success-tooltip-message" class="hidden">Copied!</span>
+                                        <div class="tooltip-arrow" data-popper-arrow></div>
+                                    </div>
+                                </div>
                             </div>
-                            <input type="text" id="table-search-users"
-                                class="block pt-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg w-80 bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                placeholder="Search for users">
                         </div>
                     </div>
-                    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-600 dark:text-gray-400">
-                            <tr>
-                                <th scope="col" class="px-6 py-3">
-                                    F.i.o
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Reyting
-                                </th>
-                                <th scope="col" class="px-6 py-3">
-                                    Status
-                                </th>
-
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-                                <th scope="row"
-                                    class="flex items-center px-6 py-4 text-gray-900 whitespace-nowrap dark:text-white">
-                                    <img class="w-10 h-10 rounded-full" src="../static/img/user.jpg" alt="Jese image">
-                                    <div class="ps-3">
-                                        <div class="text-base font-semibold">Baratov Javohir</div>
-                                        <div class="font-normal text-gray-500">neil.sims@flowbite.com</div>
-                                    </div>
-                                </th>
-                                <td class="px-6 py-4">
-                                    1
-                                </td>
-                                <td class="px-6 py-4">
-                                    <div class="flex items-center">
-                                        <div class="h-2.5 w-2.5 rounded-full bg-green-500 me-2"></div> Online
-                                    </div>
-                                </td>
-                            </tr>
-
-                        </tbody>
-                    </table>
-
+                    <div class="w-5/6 ml-2">
+                        <p class="text-base text-gray-900 dark:text-white">Dasturlash tili</p>
+                        <select id="countries"
+                            class="bg-gray-50 border my-2 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option selected>Dasturlash tilini tanlang</option>
+                            <option value="US">Swift</option>
+                            <option value="CA">C++</option>
+                            <option value="FR">PhP</option>
+                        </select>
+                    </div>
                 </div>
+                <div style="min-height: 20rem; max-width: 700px;" class="w-full rounded-md mt-2" id="editor"></div>
+                <button type="button"
+                    class="mt-4 focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Yuborish</button>
 
             </div>
         </div>
-
-
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.5.3/ace.js"></script>
     <script>
         if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('dark');
@@ -435,6 +444,16 @@
                 }
             }
 
+        });
+    </script>
+    <script>
+
+        let editor = document.querySelector("#editor");
+
+        ace.edit(editor, {
+            theme: "ace/theme/cobalt",
+            mode: "ace/mode/javascript",
+            fontSize: "16px"
         });
     </script>
 </body>
